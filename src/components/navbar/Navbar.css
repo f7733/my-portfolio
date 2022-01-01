@@ -1,0 +1,80 @@
+.navbarContainer {
+    height: 60px;
+    width: 100%;
+    font-size: 26px;
+    background-color: #181718;
+    color: #4782d5;
+    font-family: rubik;
+    z-index: 10;
+    position: fixed;
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../../assets/Rubik-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {padding: 0; margin: 0;}
+
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: deepskyblue;
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(28, 24, 22);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #3279DA;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
