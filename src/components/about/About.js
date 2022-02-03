@@ -21,7 +21,7 @@ export default function About() {
         <div id="about" className="aboutContainer">
           <h1 className="title">About me.</h1>
           <p className="paragraph">
-            Matthew is a developer based in Somerset.
+            Matthew is a developer based in Somerset
           <br></br>
           <br></br>He enjoys creating things that live on the internet
           </p>
